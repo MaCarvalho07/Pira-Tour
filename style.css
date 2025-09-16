@@ -124,6 +124,12 @@
           gap: 8px;
         }
 
+        .section-header h1 {
+          font-size: 18px;
+          color: #046722;
+
+        }
+
         .section-icon {
           color: #046722;
         }
