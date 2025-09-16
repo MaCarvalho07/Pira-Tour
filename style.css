@@ -1,0 +1,433 @@
+ a,
+    a:visited,
+    a:hover,
+    a:active {
+      text-decoration: none;
+      color: inherit;
+    }
+
+
+* {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        body {
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+          background-color: #fafafa;
+          color: #0a0a0a;
+          line-height: 1.6;
+        }
+
+        /* App Container */
+        .app-container {
+          min-height: 100vh;
+          background-color: #fafafa;
+        }
+
+        .mobile-container {
+          max-width: 448px;
+          margin: 0 auto;
+          background-color: #fafafa;
+          min-height: 100vh;
+          position: relative;
+        }
+
+        /* Header */
+        .header {
+          background-color: #046722;
+          color: white;
+          padding: 16px;
+          border-radius: 0 0 24px 24px;
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-content {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        .header-left {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+        }
+
+        .avatar {
+          position: relative;
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+          border: 2px solid rgba(255, 255, 255, 0.2);
+          overflow: hidden;
+        }
+
+        .avatar-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .avatar-fallback {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: white;
+          color: #046722;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bold;
+          font-size: 16px;
+        }
+
+        .header-text h1 {
+          font-size: 24px;
+          font-weight: bold;
+          letter-spacing: -0.025em;
+        }
+
+        .header-text p {
+          color: rgba(255, 255, 255, 0.8);
+          font-size: 14px;
+        }
+
+        .notification-icon {
+          color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* Main Content */
+        .main-content {
+          padding: 16px;
+          padding-bottom: 80px;
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+        }
+
+        /* Section Styles */
+        .section {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          text-decoration: none;
+          color: inherit;
+        }
+
+        .section-header {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+
+        .section-icon {
+          color: #046722;
+        }
+
+        .section-title {
+          font-size: 20px;
+          font-weight: bold;
+          color: #0a0a0a;
+          flex: 1;
+        }
+
+        .arrow-icon {
+          color: #737373;
+        }
+
+        /* Featured Cards */
+        .featured-cards {
+          display: flex;
+          gap: 12px;
+          overflow-x: auto;
+          padding-bottom: 8px;
+        }
+
+        .featured-card {
+          min-width: 160px;
+          background-color: white;
+          border-radius: 12px;
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+          padding: 16px;
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          transition: box-shadow 0.2s;
+        }
+
+        .featured-card:hover {
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-image-container {
+          position: relative;
+        }
+
+        .card-image {
+          width: 100%;
+          height: 80px;
+          object-fit: cover;
+          border-radius: 8px;
+        }
+
+        .rating-badge {
+          position: absolute;
+          top: -8px;
+          right: -8px;
+          background-color: #f59e0b;
+          color: white;
+          padding: 4px 8px;
+          border-radius: 12px;
+          font-size: 12px;
+          font-weight: 600;
+          display: flex;
+          align-items: center;
+          gap: 4px;
+        }
+
+        .card-title {
+          font-weight: 600;
+          font-size: 14px;
+          color: #0a0a0a;
+          line-height: 1.4;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+
+        .card-category {
+          font-size: 12px;
+          color: #737373;
+        }
+
+        /* News Card */
+        .news-card {
+          background-color: white;
+          border-radius: 12px;
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+          padding: 16px;
+          display: flex;
+          gap: 12px;
+          align-items: flex-start;
+        }
+
+        .news-content {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+        }
+
+        .news-title {
+          font-weight: 600;
+          font-size: 16px;
+          color: #0a0a0a;
+          line-height: 1.4;
+        }
+
+        .news-meta {
+          font-size: 12px;
+          color: #737373;
+        }
+
+        .news-image {
+          width: 80px;
+          height: 80px;
+          object-fit: cover;
+          border-radius: 8px;
+          flex-shrink: 0;
+        }
+
+        /* Weather Grid */
+        .weather-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 12px;
+        }
+
+        .weather-card {
+          background-color: white;
+          border-radius: 12px;
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+          padding: 16px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 8px;
+          text-align: center;
+        }
+
+        .weather-icon {
+          color: #f59e0b;
+        }
+
+        .weather-label {
+          font-size: 12px;
+          color: #737373;
+          font-weight: 500;
+        }
+
+        /* Transport Grid */
+        .transport-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 12px;
+        }
+
+        .transport-card {
+          background-color: white;
+          border-radius: 12px;
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+          padding: 16px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 8px;
+          text-align: center;
+        }
+
+        .transport-icon {
+          color: #046722;
+        }
+
+        .transport-label {
+          font-size: 12px;
+          color: #737373;
+          font-weight: 500;
+        }
+
+        /* Curiosity Cards */
+        .curiosity-cards {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+        }
+
+        .curiosity-card {
+          background-color: #e0f2fe;
+          border-radius: 12px;
+          padding: 16px;
+          display: flex;
+          gap: 12px;
+          align-items: flex-start;
+        }
+
+        .curiosity-image {
+          width: 60px;
+          height: 60px;
+          object-fit: cover;
+          border-radius: 8px;
+          flex-shrink: 0;
+        }
+
+        .curiosity-content {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+        }
+
+        .curiosity-title {
+          font-weight: 600;
+          font-size: 14px;
+          color: #0a0a0a;
+        }
+
+        .curiosity-description {
+          font-size: 12px;
+          color: #737373;
+          line-height: 1.4;
+        }
+
+        /* Bottom Navigation */
+        .bottom-nav {
+          position: fixed;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 100%;
+          max-width: 448px;
+          background-color: white;
+          border-top: 1px solid #e5e5e5;
+        }
+
+        .nav-container {
+          display: flex;
+          justify-content: space-around;
+          padding: 8px 0;
+        }
+
+        .nav-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 8px 12px;
+          border-radius: 8px;
+          border: none;
+          background: none;
+          cursor: pointer;
+          transition: all 0.2s;
+          color: #737373;
+        }
+
+        .nav-item.active {
+          background-color: #046722;
+          color: white;
+        }
+
+        .nav-item:hover:not(.active) {
+          color: #0a0a0a;
+        }
+
+        .nav-icon {
+          margin-bottom: 4px;
+        }
+
+        .nav-label {
+          font-size: 12px;
+          font-weight: 500;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+          .mobile-container {
+            max-width: 100%;
+          }
+
+          .featured-cards {
+            padding-left: 4px;
+            padding-right: 4px;
+          }
+
+          .weather-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
+
+          .transport-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+
+        /* Scrollbar Styling */
+        .featured-cards::-webkit-scrollbar {
+          height: 4px;
+        }
+
+        .featured-cards::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 2px;
+        }
+
+        .featured-cards::-webkit-scrollbar-thumb {
+          background: #046722;
+          border-radius: 2px;
+        }
+
+        .featured-cards::-webkit-scrollbar-thumb:hover {
+          background: #b91c1c;
+        }
